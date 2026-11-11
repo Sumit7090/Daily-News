@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Daily News</h1>
+        <p>Stay Updated With Latest News</p>
+    </header>
+
+    <div class="search-box">
+        <input type="text" id="searchInput"
+        placeholder="Search news here...">
+
+        <button onclick="searchNews()">Search</button>
+    </div>
+
+    <nav>
+        <button onclick="getNews('general')">All News</button>
+        <button onclick="getNews('nation')">India</button>
+        <button onclick="getNews('technology')">Technology</button>
+        <button onclick="getNews('sports')">Sports</button>
+        <button onclick="getNews('business')">Business</button>
+        <button onclick="getNews('entertainment')">Entertainment</button>
+    </nav>
+
+    <h2 class="heading">Latest Headlines</h2>
+
+    <p id="message">Loading news...</p>
+
+    <div id="newsContainer" class="news-container"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
